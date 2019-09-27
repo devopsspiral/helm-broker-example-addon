@@ -1,0 +1,10 @@
+credential:
+  - name: endpoint
+    value: {{ .Values.endpoint }}
+  - name: admin-user
+    value: admin
+  - name: admin-password
+    valueFrom:
+      secretKeyRef:
+        name: {{ template "grafana.fullname" . }}
+        key: admin-password
