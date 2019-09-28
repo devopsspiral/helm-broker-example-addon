@@ -1,6 +1,6 @@
 credential:
   - name: endpoint
-    value: {{ .Values.endpoint }}
+    value: "http://{{ .Values.instanceName }}"
   - name: admin-user
     value: admin
   - name: admin-password

@@ -108,6 +108,8 @@ service:
   labels: {}
   portName: service
 
+instanceName: NeedsToBeDefined
+
 ingress:
   enabled: true
   annotations: {}
@@ -129,11 +131,11 @@ ingress:
 
 resources:
   limits:
-    cpu: 100m
-    memory: 128Mi
+    cpu: 2000m
+    memory: 2048Mi
   requests:
-    cpu: 100m
-    memory: 128Mi
+    cpu: 1000m
+    memory: 1280Mi
 
 ## Node labels for pod assignment
 ## ref: https://kubernetes.io/docs/user-guide/node-selection/
